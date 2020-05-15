@@ -6,18 +6,17 @@ import * as serviceWorker from './serviceWorker';
 import { createStore } from "redux";
 import { Provider } from "react-redux";
 import reducers from './redux/reducers';
+import { CProvider } from "./context/Provider";
 
 
 const store = createStore(reducers);
 
 export const dispatch = store.dispatch;
 
-console.log('Store oluştu')
-
 ReactDOM.render(
-    <Provider store={store}>
+    <CProvider>
       <App />
-    </Provider>,
+    </CProvider>,
   document.getElementById('root')
 );
 

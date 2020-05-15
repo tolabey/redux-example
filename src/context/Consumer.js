@@ -1,5 +1,5 @@
 import React from 'react';
-import { Context } from './provider';
+import { Context } from './Provider';
 
 export function withConsumer(Component) {
   return function WrapperComponent(props) {

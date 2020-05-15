@@ -17,7 +17,7 @@ const sockPort = process.env.WDS_SOCKET_PORT;
 module.exports = function(proxy, allowedHost) {
   return {
     // WebpackDevServer 2.4.3 introduced a security fix that prevents remote
-    // websites from potentially accessing local content through DNS rebinding:
+    // websites from potentially accessing local context through DNS rebinding:
     // https://github.com/webpack/webpack-dev-server/issues/887
     // https://medium.com/webpack/webpack-dev-server-middleware-security-issues-1489d950874a
     // However, it made several existing use cases such as development in cloud

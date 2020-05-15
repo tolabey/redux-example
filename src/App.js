@@ -26,4 +26,4 @@ class App extends Component {
   }
 }
 
-export default React.memo(App);
+export default App;

@@ -1,10 +1,12 @@
 import React, { PureComponent } from 'react';
 import { withRouter } from "react-router-dom";
+import {withConsumer} from "../context/Consumer";
 
 
 class Navbar extends PureComponent {
 
   render() {
+    console.log('this.NABBBAR', this.props)
 
     return(
       <>
@@ -18,4 +20,4 @@ class Navbar extends PureComponent {
   }
 }
 
-export default withRouter(Navbar);
+export default withRouter(withConsumer(Navbar));
